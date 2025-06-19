@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&family=Orbitron:wght@400..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./Assets/Css/styles.css">
+    <title>Virtual Store</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">Virtual Store</div>
+        <nav class="nav-bar">
+            <ul>
+                <li>Home Page</li>
+                <li>Produtos</li>
+                <li>Contato</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="tech-circle">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+
+        <div class="list">
+            <div class="item active">
+                <div class="product-img">
+                    <img src="./Img/iphone 16.png" alt="Iphone 16 Pro Max">
+                </div>
+                <div class="content">
+                    <p class="product-tag">Feito para Apple Intelligence</p>
+                    <p class="product-name">Iphone 16 Pro Max</p>
+                    <p class="description">O iPhone 16 Pro Max é o topo de linha da Apple em 2024,
+                        com tela 6,9" Super Retina XDR, chip A18 Pro para desempenho avançado
+                        e Apple Intelligence para recursos de IA com privacidade. Possui um sistema
+                        de câmera tripla com 48MP (principal, ultra-angular e teleobjetiva 5x),
+                        gravação em 4K Dolby Vision a 120 fps e bateria de longa duração.
+                        Disponível em quatro cores de titânio e resistência IP68.
+                    </p>
+                    <button class="btn" href="#">Saiba Mais</button>
+                </div>
+            </div>
+            <div class="item">
+                <div class="product-img">
+                    <img src="./Img/watch series 10.png" alt="Apple Watch">
+                </div>
+                <div class="content">
+                    <p class="product-tag">Smartwatch mais tecnológico</p>
+                    <p class="product-name">Apple Watch Series 10</p>
+                    <p class="description">O Apple Watch Series 10 tem tela OLED de 2.000 nits,
+                        chip S10 ultrarrápido e novo design mais fino. Monitora apneia do sono,
+                        ECG e temperatura corporal, além de bateria de 36 horas.
+                        Resistente a 6m de profundidade e com conexão celular integrada.
+                        Disponível em titânio e alumínio polido.
+                    </p>
+                    <button class="btn" href="#">Saiba Mais</button>
+                </div>
+            </div>
+            <div class="item">
+                <div class="product-img">
+                    <img src="./Img/apple vision pro.png" alt="Apple Vision">
+                </div>
+                <div class="content">
+                    <p class="product-tag">O melhor VR do mercado</p>
+                    <p class="product-name">Apple Vision Pro</p>
+                    <p class="description">O Apple Vision Pro é um computador espacial que
+                        mistura conteúdo digital ao ambiente físico, controlado por olhos,
+                        mãos e voz. Possui tela Micro-OLED de 23 milhões de pixels,
+                        chip M2 + R1 para desempenho ultrarrápido e câmera 3D para fotos
+                        e vídeos espaciais. Bateria dura até 2,5 horas e integra Spatial
+                        Audio imersivo. Disponível em 256GB, 512GB ou 1TB.
+                    </p>
+                    <button class="btn" href="#">Saiba Mais</button>
+                </div>
+            </div>
+            <div class="item">
+                <div class="product-img">
+                    <img src="./Img/airpods max.png" alt="Airpods Max">
+                </div>
+                <div class="content">
+                    <p class="product-tag">Melhor fone Auricular</p>
+                    <p class="product-name">Airpods Max</p>
+                    <p class="description">Fones premium com Áudio Espacial e ANC de alto nível,
+                        chip H1 para conexão instantânea e 20h de bateria. Design em alumínio aeronáutico
+                        e almofadas magnéticas, disponível em 5 cores. Alto-falantes dinâmicos para
+                        som imersivo e controles via Digital Crown. Resistente a suor, mas sem IP contra água.
+                        Preço elevado, mas qualidade Apple.
+                    </p>
+                    <button class="btn" href="#">Saiba Mais</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="arrows">
+            <button class="arrow-btn" id="prev">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff"
+                    class="bi bi-caret-left-fill" viewBox="0 0 16 16">
+                    <path
+                        d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z" />
+                </svg>
+            </button>
+            <button class="arrow-btn" id="next">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff"
+                    class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                    <path
+                        d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                </svg>
+            </button>
+        </div>
+
+        <div class="indicators">
+            <div class="numbers">01</div>
+            <div class="dots">
+                <div class="dot active"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </div>
+
+
+    </main>
+    <script src="./Assets/Js/main.js"></script>
+</body>
+
+</html>
