@@ -223,7 +223,7 @@ header nav ul li:hover::after {
     transition-delay: 1.8s;
 }
 
-.active .btn{
+    .active .btn{
     opacity: 1;
     transform: translateX(0);
 }
@@ -231,6 +231,10 @@ header nav ul li:hover::after {
 .btn:hover{
     background: linear-gradient(140deg, #083dce, #00f7ff);
     box-shadow: 0 0 30px rgba(0, 247, 255, 0.5);
+}
+
+.tech-circle, .container::before, .circle {
+    pointer-events: none;
 }
 
 .arrows{
@@ -248,9 +252,11 @@ header nav ul li:hover::after {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    cursor: pointer;
     background-color: rgba(255,255, 255, 0.1);
     border: 1px solid rgba(0, 247, 255, 0.3);
+    cursor: pointer;
+    z-index: 10;
+    position: relative;
 }
 
 .arrow-btn:hover{
